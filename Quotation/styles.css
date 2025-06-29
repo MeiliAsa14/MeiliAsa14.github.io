@@ -1,62 +1,78 @@
-table {
-    border-spacing: 0px;
-    border-collapse: collapse;
-    width: 100%;
-}
 
-th {
-    background-color: rgb(184, 212, 231);
-    color: darkblue;
-    border: solid #000000 1px;
-}
+    body {
+        font-family: 'Inter', sans-serif; 
+        background-color: #E3F2FD; /* Lighter, friendlier blue */
+        color: #424242; /* Slightly softer dark gray for general text */
+    }
 
-td {
-    vertical-align: top;
-}
+    table {
+        border-spacing: 0px;
+        border-collapse: collapse;
+        width: 100%;
+        border-radius: 12px; /* Softer corners for the entire table */
+        overflow: hidden; /* Ensures content respects border-radius with collapsed borders */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
 
-#sub-total {
-    border-top: solid #000 1px;
-}
+    th {
+        background-color: #90CAF9; /* table headers */
+        color: #1976D2; /* header text */
+        border: solid #E0E0E0 0.4px; 
+        padding: 12px 15px; 
+        text-align: center; /* Generally centered headers look cleaner */
+    }
 
-#bottom-line {
-    border-bottom: solid #000 1px;
-}
+    td {
+        vertical-align: top;
+        border: solid #E0E0E0 1px; 
+        padding: 10px 15px; 
+    }
 
-.data {
-    border-left: solid #000000 1px;
-    border-right: solid #000000 1px;
-}
+    #sub-total {
+        border-top: solid #BDBDBD 1px; 
+    }
 
-.data2 {
-    border-right: solid #000000 1px;
-}
+    #bottom-line {
+        border-bottom: solid #BDBDBD 1px; 
+    }
 
-p.i {
-    font-style: italic;
-  }
+    .data {
+        border-left: solid #E0E0E0 1px; /* Lighter border color */
+        border-right: solid #E0E0E0 1px; /* Lighter border color */
+    }
 
-.r {
-    text-align: right;
-}
+    .data2 {
+        border-right: solid #E0E0E0 1px; /* Lighter border color */
+    }
 
-.cen {
-    text-align: center;
-}
+    p.i {
+        font-style: italic;
+    }
 
-.center {
-    margin: auto;
-  }
+    .r {
+        text-align: right;
+    }
 
-.colo {
-    font-weight: bold;
-    color: darkblue;
-}
+    .cen {
+        text-align: center;
+    }
 
-.thick {
-    font-weight: bold;
-}
+    .center {
+        margin: auto;
+    }
 
-.tab { 
-    display:inline-block; 
-    margin-left: 40px; 
-}
+    .colo {
+        font-weight: medium; /* Medium weight for a friendly look */
+        /* A softer, friendlier blue */
+        color: #2196F3; /* A friendly, standard blue for emphasized text */
+    }
+
+    .thick {
+        font-weight: bold;
+    }
+
+    .tab {
+        display: inline-block;
+        margin-left: 40px;
+    }
+

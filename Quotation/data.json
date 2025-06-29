@@ -1,26 +1,44 @@
 [
   {
-      "quantity": 1.5,
-      "description": "Stock Item Example 0001",
-      "unitPrice": 900.00,
-      "amount": 1450.00
+    "description": "Luminance Tokens",
+    "quantity": 1.5,
+    "unitPrice": 900.0,
+    "amount": 1350.0
   },
   {
-      "quantity": 1,
-      "description": "Stock Item Example 0002",
-      "unitPrice": 450.00,
-      "amount": 2000.00
+    "description": "Echo Crystals",
+    "quantity": 1.0,
+    "unitPrice": 450.0,
+    "amount": 450.0
   },
   {
-      "quantity": 1,
-      "description": "Service Charge Invoicing Item 001",
-      "unitPrice": 100.00,
-      "amount": 200.00
+    "description": "Stardust Vials",
+    "quantity": 3.0,
+    "unitPrice": 100.0,
+    "amount": 300.0
   },
   {
-      "quantity": 1,
-      "description": "Service Charge Invoicing Item 002, Additional line 1 for this item, Additional line 2 for this item",
-      "unitPrice": 200.00,
-      "amount": 600.00
+    "description": "Aetherium Energy Core, with stabilizing rune-work",
+    "quantity": 1.0,
+    "unitPrice": 200.0,
+    "amount": 200.0
+  },
+  {
+    "description": "Celestial Dragon's Scale",
+    "quantity": 0.5,
+    "unitPrice": 5000.0,
+    "amount": 2500.0
+  },
+  {
+    "description": "Sky-Weaver's Silk",
+    "quantity": 10.0,
+    "unitPrice": 25.0,
+    "amount": 250.0
+  },
+  {
+    "description": "Whispering Winds Condenser",
+    "quantity": 2.0,
+    "unitPrice": 750.0,
+    "amount": 1500.0
   }
 ]
