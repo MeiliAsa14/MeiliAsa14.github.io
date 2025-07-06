@@ -1,0 +1,36 @@
+/* App.css */
+
+/* ... (your existing styles) ... */
+
+/* New styles for the circular animation */
+.logo.bank {
+  /* Ensure the logo is square or adjust dimensions for perfect circle */
+  height: 6em; /* Or whatever size you prefer */
+  width: 6em;  /* Must match height for a perfect circle */
+  border-radius: 50%; /* Makes the element circular */
+  overflow: hidden; /* Hides parts of the image that might extend beyond the circle */
+  object-fit: cover; /* Ensures the image covers the circular area */
+  will-change: transform, filter; /* Optimize for animation */
+  transition: filter 300ms; /* Keep your existing transition if any */
+}
+
+/* Define the spin animation */
+@keyframes circular-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to the bank logo when it's in an 'a' tag (as per your App.jsx) */
+a .logo.bank {
+  animation: circular-spin infinite 10s linear; /* 10s for duration, adjust as needed */
+  /* You can add more styling here like box-shadow for a glow effect */
+}
+
+/* Adjust if you want hover effects on the spinning logo */
+.logo.bank:hover {
+  filter: drop-shadow(0 0 2em #4CAF50aa); /* Example color, adjust as desired */
+}
