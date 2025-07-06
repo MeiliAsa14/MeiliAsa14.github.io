@@ -97,6 +97,18 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
+  background-image: linear-gradient(
+      rgba(0, 0, 40, 0.5), 
+      rgba(0, 0, 60, 0.4)
+    ),
+    url('./assets/whalesky.jpg'); /* or use a URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: rgba(234, 225, 225, 0.87); /* light text */
 }
 
 /* Modify the #root styles */
@@ -147,4 +159,42 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.card {
+  background-color: #ffffff11; /* Slight translucent for dark mode */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.card input {
+  margin-left: 10px;
+  padding: 0.4em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+.card input:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 1px #646cff44;
+}
+
+.results {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.results strong {
+  font-size: 1.5rem;
+  color: #4CAF50;
 }

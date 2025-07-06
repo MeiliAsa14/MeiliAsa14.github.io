@@ -1,8 +1,7 @@
-// App.jsx
+// Bank.jsx
 import bankLogo from './assets/bank.svg' // Keep this import for the bank logo
 import './Bank.css'
-function bank() {
-  // UNCOMMENT THE RETURN STATEMENT AND ITS CONTENTS
+function Bank() {
   return (
     <>
       <div>
@@ -10,11 +9,12 @@ function bank() {
           <img src={bankLogo} className="logo bank" alt="Bank logo" />
         </a>
       </div>
-      <h1>VAT calculator</h1> {/* This will be rendered */}
+      <h1>VAT calculator</h1> 
       <br />
       <br />
     </>
-  )
+  );
 }
 
-export default bank
+export default Bank;
+
