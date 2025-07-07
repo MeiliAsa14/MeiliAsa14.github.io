@@ -127,7 +127,23 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 0, 50, 0.6); /* Soft blue glow */
+  animation: fadeInTitle 1.5s ease-out forwards;
+  opacity: 0;
 }
+
+@keyframes fadeInTitle {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
 button {
   border-radius: 8px;
@@ -141,7 +157,8 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #8ea9ff;
+  box-shadow: 0 0 10px #8ea9ff55;
 }
 button:focus,
 button:focus-visible {
@@ -162,14 +179,16 @@ button:focus-visible {
 }
 
 .card {
-  background-color: #ffffff11; /* Slight translucent for dark mode */
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   width: 100%;
   max-width: 400px;
   text-align: center;
 }
+
 
 .card input {
   margin-left: 10px;
